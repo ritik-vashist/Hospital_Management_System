@@ -3,11 +3,11 @@
 {% load widget_tweaks %}
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+    >
     <title>Ansari Hospital</title>
     <style type="text/css">
       body {
@@ -53,10 +53,10 @@
 
   <body>
     {% include "hospital/navbar.html" %}
-    <br />
-    <br />
-    <br />
-    <br />
+    <br>
+    <br>
+    <br>
+    <br>
 
     {% comment %} <!--- signup page for patient by admin  ----------> {% endcomment %}
     <form method="post" enctype="multipart/form-data">
@@ -71,42 +71,33 @@
             <div class="row">
               <div class="col-md-6">
                 <div class="form-group">
-                  {% render_field userForm.first_name class="form-control"
-                  placeholder="First Name" %}
+                  {% render_field userForm.first_name class="form-control" placeholder="First Name" %}
                 </div>
                 <div class="form-group">
-                  {% render_field userForm.username class="form-control"
-                  placeholder="Username" %}
+                  {% render_field userForm.username class="form-control" placeholder="Username" %}
                 </div>
                 <div class="form-group">
-                  {% render_field patientForm.address class="form-control"
-                  placeholder="Address" %}
+                  {% render_field patientForm.address class="form-control" placeholder="Address" %}
                 </div>
                 <div class="form-group">
-                  {% render_field patientForm.symptoms class="form-control"
-                  placeholder="Symptoms" %}
+                  {% render_field patientForm.symptoms class="form-control" placeholder="Symptoms" %}
                 </div>
                 <div class="form-group">
-                  {% render_field patientForm.profile_pic required="required"
-                  class="form-control" placeholder="Profile Picture" %}
+                  {% render_field patientForm.profile_pic required="required" class="form-control" placeholder="Profile Picture" %}
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="form-group">
-                  {% render_field userForm.last_name class="form-control"
-                  placeholder="Last Name" %}
+                  {% render_field userForm.last_name class="form-control" placeholder="Last Name" %}
                 </div>
                 <div class="form-group">
-                  {% render_field userForm.password class="form-control"
-                  placeholder="Password" %}
+                  {% render_field userForm.password class="form-control" placeholder="Password" %}
                 </div>
                 <div class="form-group">
-                  {% render_field patientForm.mobile class="form-control"
-                  pattern="[6789][0-9]{9}" placeholder="Mobile Number" %}
+                  {% render_field patientForm.mobile class="form-control" pattern="[6789][0-9]{9}" placeholder="Mobile Number" %}
                 </div>
                 <div class="form-group">
-                  {% render_field patientForm.assignedDoctorId
-                  class="form-control" placeholder="Doctor" %}
+                  {% render_field patientForm.assignedDoctorId class="form-control" placeholder="Doctor" %}
                 </div>
               </div>
             </div>
